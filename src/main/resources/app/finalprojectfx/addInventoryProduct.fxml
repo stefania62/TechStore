@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="369.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane layoutX="71.0" layoutY="41.0" prefHeight="336.0" prefWidth="647.0">
+         <children>
+            <Label layoutX="168.0" layoutY="99.0" text="Name" />
+            <Label layoutX="168.0" layoutY="131.0" text="Category" />
+            <Label layoutX="168.0" layoutY="163.0" text="Description" />
+            <Label layoutX="168.0" layoutY="195.0" text="Supplier" />
+            <Label layoutX="168.0" layoutY="227.0" text="Purchased Date" />
+            <Label layoutX="168.0" layoutY="259.0" text="Purchased Price" />
+            <Label layoutX="168.0" layoutY="291.0" text="Quantity" />
+            <TextField fx:id="nameTextField" layoutX="272.0" layoutY="95.0" />
+            <TextField fx:id="descriptionTextField" layoutX="272.0" layoutY="159.0" />
+            <TextField fx:id="purchasedPriceTextField" layoutX="272.0" layoutY="255.0" />
+            <TextField fx:id="quantityTextField" layoutX="272.0" layoutY="287.0" />
+            <ChoiceBox fx:id="categoryChoiceBox" layoutX="272.0" layoutY="127.0" prefHeight="15.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="supplierChoiceBox" layoutX="272.0" layoutY="191.0" prefWidth="150.0" />
+            <DatePicker fx:id="purchasedDatePicker" layoutX="272.0" layoutY="223.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="168.0" layoutY="36.0" prefHeight="17.0" prefWidth="376.0" text="Add a new product in Inventory">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="107.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/inventoryicon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </content>
+   <buttonTypes>
+      <ButtonType buttonData="OK_DONE" text="Add Product" />
+      <ButtonType buttonData="CANCEL_CLOSE" text="Cancel" />
+   </buttonTypes>
+</DialogPane>

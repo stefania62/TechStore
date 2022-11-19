@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<DialogPane prefHeight="141.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <GridPane hgap="5" vgap="5">
+         <Label text="Item:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+         <ChoiceBox fx:id="itemSelect" prefHeight="25.0" prefWidth="497.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+         <Label text="Quantity" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+         <TextField fx:id="quantityTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+         <Label text="Selling Price ($)" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+         <TextField fx:id="sellingPriceTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <columnConstraints>
+            <ColumnConstraints maxWidth="97.0" minWidth="13.0" prefWidth="97.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="262.0" minWidth="178.0" prefWidth="178.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </content>
+
+   <buttonTypes>
+      <ButtonType fx:id="addItemBtn" buttonData="OK_DONE" text="Add Item" />
+      <ButtonType buttonData="CANCEL_CLOSE" text="Cancel" />
+   </buttonTypes>
+
+</DialogPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="536.0" prefWidth="759.0" style="-fx-background-color: #F7F4FC;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.finalprojectfx.dashboard.DashboardController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-1.0" prefHeight="539.0" prefWidth="269.0" style="-fx-background-color: #DFE0E6;" AnchorPane.bottomAnchor="1.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/cute-astronaut-super-hero-flying-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon_75817-2170-modified.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="userNameLabel" text="User name" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font size="12.7" />
+               </font>
+            </Label>
+          <Button fx:id="overviewMenuButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#onOverviewMenuButtonClick" prefHeight="25.0" prefWidth="217.0" style="-fx-background-color: #DFE0E6;" text="Overview">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons8_Home_32px.png" />
+                     </image></ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="14.0" left="40.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="saleInvoicesMenuButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#onSaleInvoicesMenuButtonClick" prefHeight="25.0" prefWidth="217.0" style="-fx-background-color: #DFE0E6;" text="Sale Invoices">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons8_Xbox_Menu_32px.png" />
+                     </image></ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="14.0" left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="inventoryMenuButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#onInventoryMenuButtonClick" prefHeight="25.0" prefWidth="217.0" style="-fx-background-color: #DFE0E6;" text="Inventory">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons8_Box_32px.png" />
+                     </image></ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="14.0" left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="suppliersMenuButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#onSuppliersMenuButtonClick" prefHeight="25.0" prefWidth="217.0" style="-fx-background-color: #DFE0E6;" text="Suppliers">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons8_Search_52px.png" />
+                     </image></ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="14.0" left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="usersMenuButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#onUsersMenuButtonClick" prefHeight="25.0" prefWidth="217.0" style="-fx-background-color: #DFE0E6;" text="Users">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="14.0" left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="giftCardsMenuButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#onGiftCardsMenuButtonClick" prefHeight="25.0" prefWidth="217.0" style="-fx-background-color: #DFE0E6;" text="Gift Cards">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons8_Open_Envelope_32px.png" />
+                     </image></ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="14.0" left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="signOutMenuButton" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="36.0" layoutY="438.0" mnemonicParsing="false" onAction="#onMenuLogoutButtonClick" prefHeight="25.0" prefWidth="217.0" style="-fx-background-color: #DFE0E6;" text="Sign Out">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="14.0" left="40.0" />
+               </padding>
+            </Button>
+         </children></VBox>
+      <Pane fx:id="mainPane" layoutX="268.0" layoutY="-3.0" prefHeight="542.0" prefWidth="492.0" />
+   </children>
+</AnchorPane>

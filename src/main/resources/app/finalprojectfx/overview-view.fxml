@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxWidth="1144.0" prefHeight="720.0" prefWidth="1144.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.finalprojectfx.overview.OverviewController">
+   <children>
+      <Label layoutX="133.0" layoutY="204.0" prefHeight="17.0" prefWidth="128.0" text="Sales Today">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="354.0" layoutY="206.0" text="Sales This Month">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="600.0" layoutY="204.0" text="Sales Total">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="salesTodayInput" disable="true" layoutX="98.0" layoutY="251.0" prefHeight="27.0" prefWidth="172.0" style="-fx-border-color: #53B5DF;" />
+      <TextField fx:id="salesThisMonthInput" disable="true" layoutX="324.0" layoutY="251.0" prefHeight="27.0" prefWidth="172.0" style="-fx-border-color: #53B5DF;" />
+      <TextField fx:id="salesTotalInput" disable="true" layoutX="550.0" layoutY="251.0" prefHeight="27.0" prefWidth="172.0" style="-fx-border-color: #53B5DF;" />
+      <Label layoutX="292.0" layoutY="92.0" prefHeight="56.0" prefWidth="280.0" text="SALES OVERVIEW">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="299.0" fitWidth="326.0" layoutX="143.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/cute-3d-robot-with-badge-png.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="371.0" layoutY="406.0" prefHeight="46.0" prefWidth="250.0" text="“Alone we can do so little; ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="429.0" prefHeight="46.0" prefWidth="280.0" text="together we can do so much.” " textFill="#25758d">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="389.0" layoutY="475.0" text="- Helen Keller">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

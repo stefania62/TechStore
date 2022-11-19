@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="1144.0" prefHeight="720.0" prefWidth="1144.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.finalprojectfx.usersManagement.UsersController">
+   <children>
+      <TableView fx:id="usersTable" layoutX="115.0" layoutY="201.0" prefHeight="376.0" prefWidth="592.0" style="-fx-background-color: #FFFFFF;">
+        <columns>
+          <TableColumn fx:id="usersTableIdColum" prefWidth="60.0" text="ID" />
+          <TableColumn fx:id="usersTableNameColumn" prefWidth="147.0" text="Name" />
+            <TableColumn fx:id="usersTableSurnameColumn" prefWidth="125.0" text="Surname" />
+            <TableColumn fx:id="usersTableUsernameColumn" prefWidth="127.0" text="Username" />
+            <TableColumn fx:id="usersTableRoleColumn" prefWidth="132.0" text="Role" />
+        </columns>
+      </TableView>
+      <Button layoutX="612.0" layoutY="145.0" mnemonicParsing="false" onAction="#onRegisterUserButtonClick" text="Register a user" />
+      <Label layoutX="233.0" layoutY="70.0" text="USERS">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="123.0" fitWidth="124.0" layoutX="339.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/cute-astronaut-playing-laptop-cartoon-vector-icon-illustration-science-technology-icon_138676-1973-modified.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="483.0" layoutY="70.0" text="MENU">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

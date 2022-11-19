@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="1144.0" prefHeight="720.0" prefWidth="1144.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.finalprojectfx.saleInvoices.SaleInvoicesController">
+   <children>
+      <TableView fx:id="saleInvoicesTable" layoutX="164.0" layoutY="255.0" prefHeight="296.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="saleInvoicesTableIdColumn" prefWidth="188.0" text="Sale ID" />
+          <TableColumn fx:id="saleInvoicesTableDateColumn" prefWidth="203.0" text="Date" />
+            <TableColumn fx:id="saleInvoicesTableValueColumn" prefWidth="189.0" text="Value" />
+        </columns>
+      </TableView>
+      <Button layoutX="647.0" layoutY="196.0" mnemonicParsing="false" onAction="#onNewInvoiceButtonClick" prefHeight="25.0" prefWidth="98.0" text="New Invoice" />
+      <Label layoutX="321.0" layoutY="112.0" prefHeight="56.0" prefWidth="334.0" text="Sale Invoices" wrapText="true">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font></Label>
+      <ImageView fitHeight="189.0" fitWidth="225.0" layoutX="21.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/inventory.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

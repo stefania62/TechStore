@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="371.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane prefHeight="365.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/19">
+      <children>
+         <TextField fx:id="supplierNameInput" layoutX="191.0" layoutY="86.0" prefHeight="25.0" prefWidth="287.0" />
+         <TextArea fx:id="supplierAddressTextArea" layoutX="191.0" layoutY="140.0" prefHeight="67.0" prefWidth="287.0" />
+         <Label layoutX="118.0" layoutY="89.0" text="Name">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <Label layoutX="118.0" layoutY="144.0" text="Address">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+            <Label layoutX="188.0" layoutY="27.0" text="Add a new supplier">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="74.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/2521826.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="62.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/pngtree-location-business-card-icon-image_1356569.jpg" />
+               </image>
+            </ImageView>
+      </children>
+   </AnchorPane>
+   </content>
+   <buttonTypes>
+      <ButtonType buttonData="OK_DONE" text="Save Supplier" />
+      <ButtonType buttonData="CANCEL_CLOSE" text="Cancel" />
+   </buttonTypes>
+</DialogPane>
